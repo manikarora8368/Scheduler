@@ -1,0 +1,10 @@
+There are two common frameworks in node.JS which I thought to use in this project and that are : -
+1. ExpressJS
+2. NestJS
+
+I choosed ExpressJS over NestJS as task was to build smaller application and ExpressJS doesn't require any configurations  unlike NestJS and NestJS is mostly used for applications that needs to be scaled and NestJS is more complex than ExpressJS.
+
+Approach - 
+First I created a server in ExpressJS, declared the endpoint and setup the base for the task.Now the main task was to schedule the events, in past I have used cron jobs to schedule a event for later, I searched for it and found a library called node-schedule through which you can schedule a event for a particular given date-time. For the function to sleep for particular seconds I used normal setTimeout to delay it by given time and created my own reverse function as js doesn't provide any inbuilt function to reverse a string in js. For the script part used a simple forEach loop to traverse over the set of data and call the API for every data point.
+
+It was a basic fundamental task and I didn't faced any issue while solving it.
